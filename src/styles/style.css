@@ -1,0 +1,437 @@
+/* Reset provided by https://github.com/gatsbyjs/gatsby-starter-blog via MIT license */
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;500;600;700&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #333;
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+}
+
+.navbar {
+  padding: 15px 10vw;
+}
+
+.brand {
+  margin-left: 1rem;
+  color: #01345b;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.brand:hover {
+  color: #01345b;
+  text-decoration: none;
+}
+
+.logo-image {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+  border-bottom: 3px solid transparent;
+  padding: 0.5rem;
+  color: #01345b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.nav-item:hover {
+  border-bottom: 3px solid #e0a51a;
+  color: #e0a51a;
+  text-decoration: none;
+}
+
+.btn-project {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: #01345b;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+
+.btn-project:hover {
+  background-color: #e0a51a;
+  color: whitesmoke;
+  text-decoration: none;
+}
+
+.active-nav-item {
+  color: #01345b;
+  border-bottom: 3px solid #01345b;
+}
+
+.footer {
+  width: 100%;
+  border-top: 1px solid #dddddd;
+  margin-top: 30px;
+  text-align: center;
+}
+
+.footer p {
+  margin-bottom: 0;
+}
+
+@media (min-width: 64em) {
+  .blog {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.blog__posts {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  min-width: 90%;
+}
+
+.blog__post {
+  margin: 1rem 0;
+}
+
+.blog__post a {
+  background: #f4f4f4;
+  color: #000000;
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+}
+
+.blog__post a:hover {
+  background: #e4e4e4;
+}
+
+.blog__post h2 {
+  margin-bottom: 0;
+}
+
+.blog__post p {
+  color: #777777;
+  font-size: 0.8rem;
+  font-style: italic;
+}
+
+.home__intro {
+  min-height: 250px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#7db4df));
+  background: linear-gradient(to bottom, #ffffff, #7db4df);
+  text-align: center;
+  -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0);
+          clip-path: polygon(50% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0);
+  overflow: hidden;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 47em) {
+  .home__intro {
+    min-height: 300px;
+    padding: 2rem 5rem 5rem;
+    -webkit-clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0 0);
+            clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0 0);
+  }
+}
+
+.home__greeting {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+@media (min-width: 64em) {
+  .home__greeting {
+    font-size: 70px;
+  }
+}
+
+.home__title {
+  font-size: 35px;
+}
+
+@media (min-width: 64em) {
+  .home__title {
+    font-size: 60px;
+  }
+}
+
+.home__highlight {
+  color: black;
+}
+
+.home__entering {
+  font-weight: 400;
+}
+
+.portfolio {
+  text-align: center;
+}
+
+.portfolio .show {
+  display: block;
+}
+
+.portfolio .hide {
+  display: none;
+}
+
+.portfolio__choose {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 40px;
+}
+
+.portfolio__option {
+  display: inline-block;
+  border-bottom: 1px solid transparent;
+  width: 300px;
+  color: #01345b;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.portfolio__option:hover {
+  border-bottom: 1px solid #e0a51a;
+  color: #e0a51a;
+  text-decoration: none;
+}
+
+.portfolio__option_act {
+  color: red;
+}
+
+.portfolio__list {
+  list-style-type: none;
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.portfolio__item {
+  background-color: #fafafa;
+  padding: 30px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.portfolio__image {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  -webkit-box-flex: 4;
+      -ms-flex: 4;
+          flex: 4;
+  text-align: center;
+}
+
+.portfolio__image img {
+  width: 100%;
+}
+
+.portfolio__text {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  -webkit-box-flex: 2;
+      -ms-flex: 2;
+          flex: 2;
+  margin-right: 30px;
+  text-align: left;
+}
+
+.portfolio__text a {
+  color: #01345b;
+  text-decoration: none;
+}
+
+.portfolio__text a h3 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.portfolio__text a h3:hover {
+  color: #e0a51a;
+}
+
+.contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 70%;
+}
+
+@media (max-width: 46.9375em) {
+  .contact {
+    min-width: 80%;
+  }
+}
+
+@media (min-width: 64em) {
+  .contact {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+}
+
+.contact__form {
+  text-align: left;
+  background-color: #eeeeee;
+  border-radius: 10px;
+  padding: 20px;
+  width: 100%;
+}
+
+@media (max-width: 46.9375em) {
+  .contact__form {
+    padding: 10px;
+  }
+}
+
+.contact label {
+  display: block;
+}
+
+.contact__required {
+  color: #993c3c;
+}
+
+.contact__field {
+  margin-top: 15px;
+}
+
+.about {
+  padding-top: 50px;
+}
+
+.about__first, .about__third {
+  margin-bottom: 60px;
+}
+
+@media (min-width: 64em) {
+  .about__first, .about__third {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+
+.about__image {
+  position: relative;
+  background-image: url("../images/My picture2.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center top;
+  min-height: 17.5rem;
+  max-width: 15rem;
+}
+
+@media (min-width: 64em) {
+  .about__image {
+    -webkit-box-flex: 1;
+        -ms-flex: 1;
+            flex: 1;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+.about__text {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.about__text:not(:first-child) {
+  text-indent: 50px;
+}
+
+@media (min-width: 64em) {
+  .about__text {
+    -webkit-box-flex: 3;
+        -ms-flex: 3;
+            flex: 3;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+}
+
+.about__second {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.about__quote {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  font-weight: 600;
+}
+
+.about__skills {
+  padding: 25px 35px;
+  background-color: whitesmoke;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  width: 300px;
+}
+
+.about__skills-title {
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.about__skill p {
+  margin-bottom: 15px;
+}
+
+.about__skill-icon {
+  width: 30px;
+  max-height: 30px;
+  margin-right: 15px;
+}
+
+.about__text2 {
+  padding: 10px 30px;
+}
+
+.about__education h3 {
+  margin-bottom: 16px;
+}
+/*# sourceMappingURL=style.css.map */

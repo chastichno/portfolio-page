@@ -1,0 +1,89 @@
+.layout {
+  // text-align: center;
+}
+
+// Navbar
+.navbar {
+  padding: 15px 10vw;
+}
+
+.brand {
+  margin-left: 1rem;
+  color: $fontPrimary;
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+
+  &:hover {
+    color: $fontPrimary;
+    text-decoration: none;
+  }
+}
+.logo-image {
+  max-width: 50px;
+  margin-right: 10px;
+}
+
+.nav-item {
+  margin-right: 1.5rem;
+  border-bottom: 3px solid transparent;
+  padding: 0.5rem;
+  color: $fontPrimary;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-decoration: none;
+  &:hover {
+    border-bottom: 3px solid $fontHover;
+    color: $fontHover;
+    text-decoration: none;
+  }
+}
+
+.btn-project {
+  display: inline-block;
+  border: none;
+  padding: 0.5rem 1rem;
+  background-color: $fontPrimary;
+  color: whitesmoke;
+  font-size: 1.1rem;
+  font-weight: 600;
+
+  &:hover {
+    background-color: $fontHover;
+    color: whitesmoke;
+    text-decoration: none;
+  }
+}
+
+// TO DO add transition to border to fade in
+.active-nav-item {
+  color: $fontPrimary;
+  border-bottom: 3px solid $fontPrimary;
+}
+
+// Main container
+.content {
+  // margin: 0 auto; 
+  // padding: 1rem 10vw 5px;
+  // flex-grow: 1;
+  // display: flex;
+  // flex-direction: column;
+  // justify-content: center;
+  // align-items: center;
+  // @include breakpoint-down(small) {
+  //   padding: 2rem 15px 5px;
+  // }
+}
+
+// Footer
+.footer {
+  width: 100%;
+  border-top: 1px solid rgb(221, 221, 221);
+  margin-top: 30px;
+  // margin: 0 5rem;
+  // padding: 10px;
+  text-align: center;
+}
+.footer p {
+  margin-bottom: 0;
+}

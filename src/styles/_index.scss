@@ -1,0 +1,117 @@
+.home {
+  // padding-top: 50px;
+  // @include breakpoint-down(medium) {
+  //   padding-top: 15px;
+  // }
+  &__intro {
+    min-height: 250px;
+    background: linear-gradient(to bottom, #ffffff, #7db4df);
+    // background: linear-gradient(to bottom, #ffffff,$artichoke);
+    text-align: center;
+    clip-path: polygon(50% 0%, 100% 0%, 100% 80%, 50% 100%, 0% 80%, 0 0);
+    overflow: hidden;
+    margin-bottom: 10px;
+
+    @include breakpoint-up(medium) {
+      min-height: 300px;
+      padding: 2rem 5rem 5rem;
+      clip-path: polygon(50% 0%, 100% 0%, 100% 65%, 50% 100%, 0% 65%, 0 0);
+    }
+  }
+
+  &__greeting {
+    font-size: 40px;
+    font-weight: 700;
+    @include breakpoint-up(large) {
+      font-size: 70px;
+    }
+  }
+
+  &__title {
+    font-size: 35px;
+    @include breakpoint-up(large) {
+      font-size: 60px;
+    }
+  }
+  &__highlight {
+    color: black;
+  }
+
+  &__entering {
+    font-weight: 400;
+  }
+}
+
+//WORK SECTION
+.portfolio {
+  .show {
+    display: block;
+  }
+  .hide {
+    display: none;
+  }
+
+  text-align: center;
+  &__choose {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+  }
+  &__option {
+    display: inline-block;
+    border-bottom: 1px solid transparent;
+    width: 300px;
+    color: $fontPrimary;
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-decoration: none;
+    &:hover {
+      border-bottom: 1px solid $fontHover;
+      color: $fontHover;
+      text-decoration: none;
+    }
+    &_act {
+      color: red;
+    }
+  }
+  &__list {
+    list-style-type: none;
+    padding-left: 80px;
+    padding-right: 80px;
+  }
+
+  &__item {
+    background-color: #fafafa;
+    padding: 30px 40px;
+    display: flex;
+    // border-radius: 5px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  }
+  &__image {
+    order: 2;
+    flex: 4;
+    text-align: center;
+    img {
+      width: 100%;
+      // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+  }
+  &__text {
+    order: 1;
+    flex: 2;
+    margin-right: 30px;
+    text-align: left;
+    a {
+      color: $fontPrimary;
+      text-decoration: none;
+
+      h3 {
+        margin-bottom: 30px;
+        text-align: center;
+        &:hover {
+          color: $fontHover;
+        }
+      }
+    }
+  }
+}

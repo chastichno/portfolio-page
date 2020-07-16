@@ -1,0 +1,39 @@
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 70%;
+  //   max-width: 800px;
+  @include breakpoint-down(small) {
+    min-width: 80%;
+  }
+  @include breakpoint-up(large) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+
+  &__form {
+    text-align: left;
+    background-color: $secondaryBG;
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    @include breakpoint-down(small) {
+      padding: 10px;
+    }
+  }
+
+  label {
+    display: block;
+  }
+
+  &__required {
+    color: #993c3c;
+  }
+  &__field {
+    margin-top: 15px;
+  }
+
+}
+
+

@@ -7,7 +7,7 @@
 module.exports = {
   /* Your site config here */
   siteMetadata: {
-    title: 'Full-Stack Bootcamp!',
+    title: 'Ana Chashchina Portfolio',
     author: 'Anastasiia Chashchina'
   },
   plugins: [
@@ -31,6 +31,18 @@ module.exports = {
       }
     },
     "gatsby-plugin-sharp",
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Ana Chashchina Portfolio`,
+        short_name: `Ana Chashchina`,
+        start_url: `/`,
+        background_color: `#f7f0eb`,
+        theme_color: `#a2466c`,
+        display: `standalone`,
+        icon: `src/images/icon.png`,
+      },
+    },
     {
       resolve: "gatsby-transformer-remark",
       options: {
