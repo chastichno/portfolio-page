@@ -53,25 +53,41 @@
 
   text-align: center;
   &__choose {
-    display: flex;
+    @include breakpoint-up(medium) {
+      display: flex;
+    }
     justify-content: center;
     margin-bottom: 40px;
   }
   &__option {
-    display: inline-block;
+    display: block;
+    margin: 0 auto;
     border-bottom: 1px solid transparent;
     width: 300px;
     color: $fontPrimary;
     font-size: 1.1rem;
     font-weight: 600;
     text-decoration: none;
+    cursor: pointer;
     &:hover {
       border-bottom: 1px solid $fontHover;
       color: $fontHover;
       text-decoration: none;
     }
     &_act {
-      color: red;
+      display: block;
+      border-bottom: 1px solid transparent;
+      width: 300px;
+      color: $fontHover;
+      font-size: 1.1rem;
+      font-weight: 600;
+      text-decoration: none;
+      cursor: pointer;
+      &:hover {
+        border-bottom: 1px solid $fontHover;
+        color: $fontHover;
+        text-decoration: none;
+      }
     }
   }
   &__list {
@@ -83,17 +99,24 @@
   &__item {
     background-color: #fafafa;
     padding: 30px 40px;
-    display: flex;
     // border-radius: 5px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    margin-bottom: 50px;
+    @include breakpoint-up(large) {
+      display: flex;
+    }
   }
   &__image {
     order: 2;
     flex: 4;
     text-align: center;
     img {
-      width: 100%;
+      width: 95%;
+      transition: width 300ms ease-in-out;
       // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      &:hover {
+        width: 100%;
+      }
     }
   }
   &__text {

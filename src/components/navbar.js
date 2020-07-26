@@ -35,7 +35,7 @@ class Navbar extends React.Component {
                     <div className="navbar-nav ml-auto">
                         <Link className="nav-item" activeClassName="active-nav-item" to="/">Portfolio<span className="sr-only">(current)</span></Link>
                         <Link className="nav-item" activeClassName="active-nav-item" to="/about">About me</Link>
-                        <Link className="nav-item" activeClassName="active-nav-item" to="/blog">Blog</Link>
+                        {/* <Link className="nav-item" activeClassName="active-nav-item" to="/blog">Blog</Link> */}
                         {/* <Link className="nav-item" activeClassName="active-nav-item" to="/contact">Contact</Link> */}
                         <Link className="btn-project" to="/contact">Contact</Link>
                     </div>
