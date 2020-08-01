@@ -31,7 +31,8 @@ const AboutPage = () => {
                         <p>
                             My high communication skills provide a full understanding of clients needs as well as make it easy to work with me in a team.
                         </p>
-                        <p>Get in <Link to="contact">touch</Link> with me</p>
+                        <p>
+                            Want to speak to me? Or maybe you have fascinating idea and want me to participate? Or you simply want to say Hi? Get in <Link to="contact">touch</Link> with me</p>
                     </div>
                 </section>
 
@@ -74,7 +75,7 @@ const AboutPage = () => {
                                 <p>TechLabs Bootcamp #codeathome</p>
                             </div>
                         </div>
-                        <a href="#" className="btn-project">Download resume</a>
+                        <a target="_blank" href="https://docs.google.com/document/d/1XrwFEoqPVG-b2_5bJedBIB6R_FIuUA-BxB8y5KUXDYE/edit?usp=sharing" className="btn-project">Download resume</a>
                     </div>
                 </section>
 

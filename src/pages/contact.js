@@ -31,7 +31,7 @@ export default class ContactPage extends Component {
                     <p>
                         You can <a href="mailto:4chav2@gmail.com">send me an email</a> or just fill in this form.
                 </p>
-                    <form onSubmit={this.handleSubmit} className="contact__form">
+                    <form className="contact__form" method="post" action="https://getform.io/f/51adec74-bcc9-48ad-8908-69525dbc34ef">
                         <legend>Let's get in touch!</legend>
                         <label className="contact__field">
                             Name<span className="contact__required">*</span>

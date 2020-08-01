@@ -63,7 +63,7 @@ class IndexPage extends Component {
                                             <li>React</li>
                                             <li>Sass</li>
                                         </ul>
-                                        <a target="_blank" href="https://github.com/chastichno/Job-listing-dynamic">See the code</a>
+                                        <a target="_blank" href="https://github.com/chastichno/Job-listing-dynamic">view the code</a>
                                     </div>
                                 </li>
                                 <li className="portfolio__item">
@@ -76,7 +76,7 @@ class IndexPage extends Component {
                                             <li>Vanilla JS</li>
                                             <li>Sass</li>
                                         </ul>
-                                        <a target="_blank" href="https://github.com/chastichno/bookmark-landing-page">See the code</a>
+                                        <a target="_blank" href="https://github.com/chastichno/bookmark-landing-page">view the code</a>
                                     </div>
                                 </li>
                             </ul>
@@ -95,7 +95,7 @@ class IndexPage extends Component {
                                             <li>Mongoose</li>
                                             <li>Bootstrap</li>
                                         </ul>
-                                        <a target="_blank" href="https://github.com/chastichno/remarks-tracker/">See the code</a>
+                                        <a target="_blank" href="https://github.com/chastichno/remarks-tracker/">view the code</a>
                                     </div>
                                 </li>
                             </ul>
